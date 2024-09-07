@@ -1,0 +1,840 @@
+{
+	"info": {
+		"_postman_id": "646768e0-bca4-4798-ab2c-a22298401685",
+		"name": "Restful-booker-Kryukov-manual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26609926"
+	},
+	"item": [
+		{
+			"name": "Auth - CreateToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/auth",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Auth - CreateToken",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/auth",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718036421&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o6fl4Ooa%2BS1rNsWSIC10xv5iZtdeQ1UkEwBTWamxxac%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718036421&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o6fl4Ooa%2BS1rNsWSIC10xv5iZtdeQ1UkEwBTWamxxac%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1b-TTfQmqb0yU0vVf41TJ9j7vgSlf4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 16:20:21 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"d1d5f6fbfaac06a\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Booking - GetBookingIds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - GetBookingIds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718038400&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5mWSr0C%2F24CqIJH5DuiBqQNYCVokK2NDcyAkkiPfVO0%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718038400&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=5mWSr0C%2F24CqIJH5DuiBqQNYCVokK2NDcyAkkiPfVO0%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11810"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2e22-yx+VrYqTVG3Ww6J6qXr9KNb0veY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 16:53:20 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"bookingid\": 776\n    },\n    {\n        \"bookingid\": 159\n    },\n    {\n        \"bookingid\": 402\n    },\n    {\n        \"bookingid\": 31\n    },\n    {\n        \"bookingid\": 291\n    },\n    {\n        \"bookingid\": 792\n    },\n    {\n        \"bookingid\": 316\n    },\n    {\n        \"bookingid\": 425\n    },\n    {\n        \"bookingid\": 628\n    },\n    {\n        \"bookingid\": 455\n    },\n    {\n        \"bookingid\": 137\n    },\n    {\n        \"bookingid\": 560\n    },\n    {\n        \"bookingid\": 601\n    },\n    {\n        \"bookingid\": 327\n    },\n    {\n        \"bookingid\": 835\n    },\n    {\n        \"bookingid\": 379\n    },\n    {\n        \"bookingid\": 400\n    },\n    {\n        \"bookingid\": 219\n    },\n    {\n        \"bookingid\": 388\n    },\n    {\n        \"bookingid\": 104\n    },\n    {\n        \"bookingid\": 906\n    },\n    {\n        \"bookingid\": 802\n    },\n    {\n        \"bookingid\": 300\n    },\n    {\n        \"bookingid\": 883\n    },\n    {\n        \"bookingid\": 279\n    },\n    {\n        \"bookingid\": 302\n    },\n    {\n        \"bookingid\": 420\n    },\n    {\n        \"bookingid\": 817\n    },\n    {\n        \"bookingid\": 678\n    },\n    {\n        \"bookingid\": 56\n    },\n    {\n        \"bookingid\": 829\n    },\n    {\n        \"bookingid\": 854\n    },\n    {\n        \"bookingid\": 341\n    },\n    {\n        \"bookingid\": 687\n    },\n    {\n        \"bookingid\": 199\n    },\n    {\n        \"bookingid\": 821\n    },\n    {\n        \"bookingid\": 799\n    },\n    {\n        \"bookingid\": 66\n    },\n    {\n        \"bookingid\": 38\n    },\n    {\n        \"bookingid\": 634\n    },\n    {\n        \"bookingid\": 63\n    },\n    {\n        \"bookingid\": 849\n    },\n    {\n        \"bookingid\": 385\n    },\n    {\n        \"bookingid\": 646\n    },\n    {\n        \"bookingid\": 18\n    },\n    {\n        \"bookingid\": 183\n    },\n    {\n        \"bookingid\": 779\n    },\n    {\n        \"bookingid\": 671\n    },\n    {\n        \"bookingid\": 342\n    },\n    {\n        \"bookingid\": 243\n    },\n    {\n        \"bookingid\": 649\n    },\n    {\n        \"bookingid\": 277\n    },\n    {\n        \"bookingid\": 710\n    },\n    {\n        \"bookingid\": 157\n    },\n    {\n        \"bookingid\": 244\n    },\n    {\n        \"bookingid\": 920\n    },\n    {\n        \"bookingid\": 1\n    },\n    {\n        \"bookingid\": 22\n    },\n    {\n        \"bookingid\": 180\n    },\n    {\n        \"bookingid\": 224\n    },\n    {\n        \"bookingid\": 496\n    },\n    {\n        \"bookingid\": 782\n    },\n    {\n        \"bookingid\": 286\n    },\n    {\n        \"bookingid\": 507\n    },\n    {\n        \"bookingid\": 742\n    },\n    {\n        \"bookingid\": 690\n    },\n    {\n        \"bookingid\": 851\n    },\n    {\n        \"bookingid\": 711\n    },\n    {\n        \"bookingid\": 946\n    },\n    {\n        \"bookingid\": 196\n    },\n    {\n        \"bookingid\": 466\n    },\n    {\n        \"bookingid\": 229\n    },\n    {\n        \"bookingid\": 891\n    },\n    {\n        \"bookingid\": 828\n    },\n    {\n        \"bookingid\": 629\n    },\n    {\n        \"bookingid\": 866\n    },\n    {\n        \"bookingid\": 197\n    },\n    {\n        \"bookingid\": 264\n    },\n    {\n        \"bookingid\": 411\n    },\n    {\n        \"bookingid\": 193\n    },\n    {\n        \"bookingid\": 898\n    },\n    {\n        \"bookingid\": 579\n    },\n    {\n        \"bookingid\": 543\n    },\n    {\n        \"bookingid\": 877\n    },\n    {\n        \"bookingid\": 467\n    },\n    {\n        \"bookingid\": 953\n    },\n    {\n        \"bookingid\": 871\n    },\n    {\n        \"bookingid\": 102\n    },\n    {\n        \"bookingid\": 766\n    },\n    {\n        \"bookingid\": 718\n    },\n    {\n        \"bookingid\": 917\n    },\n    {\n        \"bookingid\": 410\n    },\n    {\n        \"bookingid\": 478\n    },\n    {\n        \"bookingid\": 764\n    },\n    {\n        \"bookingid\": 853\n    },\n    {\n        \"bookingid\": 151\n    },\n    {\n        \"bookingid\": 939\n    },\n    {\n        \"bookingid\": 696\n    },\n    {\n        \"bookingid\": 113\n    },\n    {\n        \"bookingid\": 605\n    },\n    {\n        \"bookingid\": 460\n    },\n    {\n        \"bookingid\": 310\n    },\n    {\n        \"bookingid\": 757\n    },\n    {\n        \"bookingid\": 10\n    },\n    {\n        \"bookingid\": 370\n    },\n    {\n        \"bookingid\": 540\n    },\n    {\n        \"bookingid\": 754\n    },\n    {\n        \"bookingid\": 462\n    },\n    {\n        \"bookingid\": 803\n    },\n    {\n        \"bookingid\": 808\n    },\n    {\n        \"bookingid\": 823\n    },\n    {\n        \"bookingid\": 725\n    },\n    {\n        \"bookingid\": 14\n    },\n    {\n        \"bookingid\": 686\n    },\n    {\n        \"bookingid\": 406\n    },\n    {\n        \"bookingid\": 428\n    },\n    {\n        \"bookingid\": 704\n    },\n    {\n        \"bookingid\": 692\n    },\n    {\n        \"bookingid\": 922\n    },\n    {\n        \"bookingid\": 447\n    },\n    {\n        \"bookingid\": 96\n    },\n    {\n        \"bookingid\": 434\n    },\n    {\n        \"bookingid\": 780\n    },\n    {\n        \"bookingid\": 60\n    },\n    {\n        \"bookingid\": 153\n    },\n    {\n        \"bookingid\": 376\n    },\n    {\n        \"bookingid\": 11\n    },\n    {\n        \"bookingid\": 355\n    },\n    {\n        \"bookingid\": 17\n    },\n    {\n        \"bookingid\": 502\n    },\n    {\n        \"bookingid\": 250\n    },\n    {\n        \"bookingid\": 832\n    },\n    {\n        \"bookingid\": 911\n    },\n    {\n        \"bookingid\": 887\n    },\n    {\n        \"bookingid\": 348\n    },\n    {\n        \"bookingid\": 276\n    },\n    {\n        \"bookingid\": 248\n    },\n    {\n        \"bookingid\": 727\n    },\n    {\n        \"bookingid\": 546\n    },\n    {\n        \"bookingid\": 593\n    },\n    {\n        \"bookingid\": 253\n    },\n    {\n        \"bookingid\": 553\n    },\n    {\n        \"bookingid\": 190\n    },\n    {\n        \"bookingid\": 311\n    },\n    {\n        \"bookingid\": 459\n    },\n    {\n        \"bookingid\": 329\n    },\n    {\n        \"bookingid\": 620\n    },\n    {\n        \"bookingid\": 873\n    },\n    {\n        \"bookingid\": 561\n    },\n    {\n        \"bookingid\": 716\n    },\n    {\n        \"bookingid\": 359\n    },\n    {\n        \"bookingid\": 847\n    },\n    {\n        \"bookingid\": 163\n    },\n    {\n        \"bookingid\": 789\n    },\n    {\n        \"bookingid\": 432\n    },\n    {\n        \"bookingid\": 282\n    },\n    {\n        \"bookingid\": 326\n    },\n    {\n        \"bookingid\": 271\n    },\n    {\n        \"bookingid\": 745\n    },\n    {\n        \"bookingid\": 473\n    },\n    {\n        \"bookingid\": 531\n    },\n    {\n        \"bookingid\": 875\n    },\n    {\n        \"bookingid\": 210\n    },\n    {\n        \"bookingid\": 504\n    },\n    {\n        \"bookingid\": 889\n    },\n    {\n        \"bookingid\": 108\n    },\n    {\n        \"bookingid\": 648\n    },\n    {\n        \"bookingid\": 225\n    },\n    {\n        \"bookingid\": 93\n    },\n    {\n        \"bookingid\": 471\n    },\n    {\n        \"bookingid\": 770\n    },\n    {\n        \"bookingid\": 308\n    },\n    {\n        \"bookingid\": 26\n    },\n    {\n        \"bookingid\": 806\n    },\n    {\n        \"bookingid\": 899\n    },\n    {\n        \"bookingid\": 399\n    },\n    {\n        \"bookingid\": 317\n    },\n    {\n        \"bookingid\": 517\n    },\n    {\n        \"bookingid\": 715\n    },\n    {\n        \"bookingid\": 451\n    },\n    {\n        \"bookingid\": 315\n    },\n    {\n        \"bookingid\": 603\n    },\n    {\n        \"bookingid\": 218\n    },\n    {\n        \"bookingid\": 905\n    },\n    {\n        \"bookingid\": 301\n    },\n    {\n        \"bookingid\": 440\n    },\n    {\n        \"bookingid\": 664\n    },\n    {\n        \"bookingid\": 590\n    },\n    {\n        \"bookingid\": 13\n    },\n    {\n        \"bookingid\": 934\n    },\n    {\n        \"bookingid\": 333\n    },\n    {\n        \"bookingid\": 858\n    },\n    {\n        \"bookingid\": 57\n    },\n    {\n        \"bookingid\": 890\n    },\n    {\n        \"bookingid\": 251\n    },\n    {\n        \"bookingid\": 592\n    },\n    {\n        \"bookingid\": 797\n    },\n    {\n        \"bookingid\": 881\n    },\n    {\n        \"bookingid\": 673\n    },\n    {\n        \"bookingid\": 265\n    },\n    {\n        \"bookingid\": 373\n    },\n    {\n        \"bookingid\": 42\n    },\n    {\n        \"bookingid\": 787\n    },\n    {\n        \"bookingid\": 34\n    },\n    {\n        \"bookingid\": 856\n    },\n    {\n        \"bookingid\": 103\n    },\n    {\n        \"bookingid\": 40\n    },\n    {\n        \"bookingid\": 515\n    },\n    {\n        \"bookingid\": 365\n    },\n    {\n        \"bookingid\": 508\n    },\n    {\n        \"bookingid\": 943\n    },\n    {\n        \"bookingid\": 555\n    },\n    {\n        \"bookingid\": 309\n    },\n    {\n        \"bookingid\": 143\n    },\n    {\n        \"bookingid\": 297\n    },\n    {\n        \"bookingid\": 643\n    },\n    {\n        \"bookingid\": 653\n    },\n    {\n        \"bookingid\": 166\n    },\n    {\n        \"bookingid\": 575\n    },\n    {\n        \"bookingid\": 41\n    },\n    {\n        \"bookingid\": 698\n    },\n    {\n        \"bookingid\": 839\n    },\n    {\n        \"bookingid\": 945\n    },\n    {\n        \"bookingid\": 179\n    },\n    {\n        \"bookingid\": 677\n    },\n    {\n        \"bookingid\": 538\n    },\n    {\n        \"bookingid\": 364\n    },\n    {\n        \"bookingid\": 736\n    },\n    {\n        \"bookingid\": 548\n    },\n    {\n        \"bookingid\": 713\n    },\n    {\n        \"bookingid\": 485\n    },\n    {\n        \"bookingid\": 119\n    },\n    {\n        \"bookingid\": 386\n    },\n    {\n        \"bookingid\": 145\n    },\n    {\n        \"bookingid\": 723\n    },\n    {\n        \"bookingid\": 293\n    },\n    {\n        \"bookingid\": 498\n    },\n    {\n        \"bookingid\": 24\n    },\n    {\n        \"bookingid\": 794\n    },\n    {\n        \"bookingid\": 511\n    },\n    {\n        \"bookingid\": 334\n    },\n    {\n        \"bookingid\": 59\n    },\n    {\n        \"bookingid\": 290\n    },\n    {\n        \"bookingid\": 541\n    },\n    {\n        \"bookingid\": 547\n    },\n    {\n        \"bookingid\": 811\n    },\n    {\n        \"bookingid\": 424\n    },\n    {\n        \"bookingid\": 694\n    },\n    {\n        \"bookingid\": 452\n    },\n    {\n        \"bookingid\": 528\n    },\n    {\n        \"bookingid\": 948\n    },\n    {\n        \"bookingid\": 349\n    },\n    {\n        \"bookingid\": 784\n    },\n    {\n        \"bookingid\": 445\n    },\n    {\n        \"bookingid\": 931\n    },\n    {\n        \"bookingid\": 566\n    },\n    {\n        \"bookingid\": 344\n    },\n    {\n        \"bookingid\": 15\n    },\n    {\n        \"bookingid\": 114\n    },\n    {\n        \"bookingid\": 933\n    },\n    {\n        \"bookingid\": 122\n    },\n    {\n        \"bookingid\": 706\n    },\n    {\n        \"bookingid\": 791\n    },\n    {\n        \"bookingid\": 480\n    },\n    {\n        \"bookingid\": 744\n    },\n    {\n        \"bookingid\": 642\n    },\n    {\n        \"bookingid\": 6\n    },\n    {\n        \"bookingid\": 272\n    },\n    {\n        \"bookingid\": 682\n    },\n    {\n        \"bookingid\": 731\n    },\n    {\n        \"bookingid\": 637\n    },\n    {\n        \"bookingid\": 47\n    },\n    {\n        \"bookingid\": 81\n    },\n    {\n        \"bookingid\": 295\n    },\n    {\n        \"bookingid\": 514\n    },\n    {\n        \"bookingid\": 820\n    },\n    {\n        \"bookingid\": 132\n    },\n    {\n        \"bookingid\": 36\n    },\n    {\n        \"bookingid\": 68\n    },\n    {\n        \"bookingid\": 625\n    },\n    {\n        \"bookingid\": 586\n    },\n    {\n        \"bookingid\": 833\n    },\n    {\n        \"bookingid\": 418\n    },\n    {\n        \"bookingid\": 336\n    },\n    {\n        \"bookingid\": 49\n    },\n    {\n        \"bookingid\": 497\n    },\n    {\n        \"bookingid\": 813\n    },\n    {\n        \"bookingid\": 529\n    },\n    {\n        \"bookingid\": 414\n    },\n    {\n        \"bookingid\": 347\n    },\n    {\n        \"bookingid\": 368\n    },\n    {\n        \"bookingid\": 343\n    },\n    {\n        \"bookingid\": 323\n    },\n    {\n        \"bookingid\": 737\n    },\n    {\n        \"bookingid\": 45\n    },\n    {\n        \"bookingid\": 465\n    },\n    {\n        \"bookingid\": 226\n    },\n    {\n        \"bookingid\": 50\n    },\n    {\n        \"bookingid\": 608\n    },\n    {\n        \"bookingid\": 237\n    },\n    {\n        \"bookingid\": 733\n    },\n    {\n        \"bookingid\": 600\n    },\n    {\n        \"bookingid\": 215\n    },\n    {\n        \"bookingid\": 773\n    },\n    {\n        \"bookingid\": 884\n    },\n    {\n        \"bookingid\": 616\n    },\n    {\n        \"bookingid\": 658\n    },\n    {\n        \"bookingid\": 86\n    },\n    {\n        \"bookingid\": 491\n    },\n    {\n        \"bookingid\": 378\n    },\n    {\n        \"bookingid\": 901\n    },\n    {\n        \"bookingid\": 589\n    },\n    {\n        \"bookingid\": 623\n    },\n    {\n        \"bookingid\": 138\n    },\n    {\n        \"bookingid\": 69\n    },\n    {\n        \"bookingid\": 860\n    },\n    {\n        \"bookingid\": 552\n    },\n    {\n        \"bookingid\": 814\n    },\n    {\n        \"bookingid\": 431\n    },\n    {\n        \"bookingid\": 606\n    },\n    {\n        \"bookingid\": 9\n    },\n    {\n        \"bookingid\": 74\n    },\n    {\n        \"bookingid\": 661\n    },\n    {\n        \"bookingid\": 148\n    },\n    {\n        \"bookingid\": 231\n    },\n    {\n        \"bookingid\": 771\n    },\n    {\n        \"bookingid\": 217\n    },\n    {\n        \"bookingid\": 130\n    },\n    {\n        \"bookingid\": 729\n    },\n    {\n        \"bookingid\": 758\n    },\n    {\n        \"bookingid\": 72\n    },\n    {\n        \"bookingid\": 170\n    },\n    {\n        \"bookingid\": 35\n    },\n    {\n        \"bookingid\": 569\n    },\n    {\n        \"bookingid\": 652\n    },\n    {\n        \"bookingid\": 303\n    },\n    {\n        \"bookingid\": 674\n    },\n    {\n        \"bookingid\": 423\n    },\n    {\n        \"bookingid\": 338\n    },\n    {\n        \"bookingid\": 938\n    },\n    {\n        \"bookingid\": 537\n    },\n    {\n        \"bookingid\": 281\n    },\n    {\n        \"bookingid\": 262\n    },\n    {\n        \"bookingid\": 927\n    },\n    {\n        \"bookingid\": 675\n    },\n    {\n        \"bookingid\": 738\n    },\n    {\n        \"bookingid\": 52\n    },\n    {\n        \"bookingid\": 495\n    },\n    {\n        \"bookingid\": 269\n    },\n    {\n        \"bookingid\": 204\n    },\n    {\n        \"bookingid\": 252\n    },\n    {\n        \"bookingid\": 88\n    },\n    {\n        \"bookingid\": 492\n    },\n    {\n        \"bookingid\": 429\n    },\n    {\n        \"bookingid\": 868\n    },\n    {\n        \"bookingid\": 535\n    },\n    {\n        \"bookingid\": 363\n    },\n    {\n        \"bookingid\": 205\n    },\n    {\n        \"bookingid\": 477\n    },\n    {\n        \"bookingid\": 929\n    },\n    {\n        \"bookingid\": 44\n    },\n    {\n        \"bookingid\": 73\n    },\n    {\n        \"bookingid\": 472\n    },\n    {\n        \"bookingid\": 118\n    },\n    {\n        \"bookingid\": 807\n    },\n    {\n        \"bookingid\": 503\n    },\n    {\n        \"bookingid\": 567\n    },\n    {\n        \"bookingid\": 339\n    },\n    {\n        \"bookingid\": 855\n    },\n    {\n        \"bookingid\": 160\n    },\n    {\n        \"bookingid\": 284\n    },\n    {\n        \"bookingid\": 216\n    },\n    {\n        \"bookingid\": 12\n    },\n    {\n        \"bookingid\": 7\n    },\n    {\n        \"bookingid\": 761\n    },\n    {\n        \"bookingid\": 857\n    },\n    {\n        \"bookingid\": 525\n    },\n    {\n        \"bookingid\": 235\n    },\n    {\n        \"bookingid\": 202\n    },\n    {\n        \"bookingid\": 304\n    },\n    {\n        \"bookingid\": 258\n    },\n    {\n        \"bookingid\": 369\n    },\n    {\n        \"bookingid\": 421\n    },\n    {\n        \"bookingid\": 622\n    },\n    {\n        \"bookingid\": 864\n    },\n    {\n        \"bookingid\": 436\n    },\n    {\n        \"bookingid\": 918\n    },\n    {\n        \"bookingid\": 748\n    },\n    {\n        \"bookingid\": 878\n    },\n    {\n        \"bookingid\": 94\n    },\n    {\n        \"bookingid\": 520\n    },\n    {\n        \"bookingid\": 527\n    },\n    {\n        \"bookingid\": 124\n    },\n    {\n        \"bookingid\": 19\n    },\n    {\n        \"bookingid\": 389\n    },\n    {\n        \"bookingid\": 869\n    },\n    {\n        \"bookingid\": 54\n    },\n    {\n        \"bookingid\": 109\n    },\n    {\n        \"bookingid\": 688\n    },\n    {\n        \"bookingid\": 84\n    },\n    {\n        \"bookingid\": 238\n    },\n    {\n        \"bookingid\": 164\n    },\n    {\n        \"bookingid\": 659\n    },\n    {\n        \"bookingid\": 51\n    },\n    {\n        \"bookingid\": 805\n    },\n    {\n        \"bookingid\": 186\n    },\n    {\n        \"bookingid\": 372\n    },\n    {\n        \"bookingid\": 247\n    },\n    {\n        \"bookingid\": 602\n    },\n    {\n        \"bookingid\": 443\n    },\n    {\n        \"bookingid\": 542\n    },\n    {\n        \"bookingid\": 912\n    },\n    {\n        \"bookingid\": 92\n    },\n    {\n        \"bookingid\": 724\n    },\n    {\n        \"bookingid\": 812\n    },\n    {\n        \"bookingid\": 16\n    },\n    {\n        \"bookingid\": 612\n    },\n    {\n        \"bookingid\": 611\n    },\n    {\n        \"bookingid\": 241\n    },\n    {\n        \"bookingid\": 777\n    },\n    {\n        \"bookingid\": 362\n    },\n    {\n        \"bookingid\": 932\n    },\n    {\n        \"bookingid\": 352\n    },\n    {\n        \"bookingid\": 314\n    },\n    {\n        \"bookingid\": 914\n    },\n    {\n        \"bookingid\": 437\n    },\n    {\n        \"bookingid\": 3\n    },\n    {\n        \"bookingid\": 142\n    },\n    {\n        \"bookingid\": 141\n    },\n    {\n        \"bookingid\": 942\n    },\n    {\n        \"bookingid\": 750\n    },\n    {\n        \"bookingid\": 788\n    },\n    {\n        \"bookingid\": 261\n    },\n    {\n        \"bookingid\": 596\n    },\n    {\n        \"bookingid\": 665\n    },\n    {\n        \"bookingid\": 62\n    },\n    {\n        \"bookingid\": 456\n    },\n    {\n        \"bookingid\": 176\n    },\n    {\n        \"bookingid\": 121\n    },\n    {\n        \"bookingid\": 843\n    },\n    {\n        \"bookingid\": 131\n    },\n    {\n        \"bookingid\": 666\n    },\n    {\n        \"bookingid\": 910\n    },\n    {\n        \"bookingid\": 670\n    },\n    {\n        \"bookingid\": 20\n    },\n    {\n        \"bookingid\": 474\n    },\n    {\n        \"bookingid\": 169\n    },\n    {\n        \"bookingid\": 345\n    },\n    {\n        \"bookingid\": 106\n    },\n    {\n        \"bookingid\": 450\n    },\n    {\n        \"bookingid\": 33\n    },\n    {\n        \"bookingid\": 266\n    },\n    {\n        \"bookingid\": 71\n    },\n    {\n        \"bookingid\": 161\n    },\n    {\n        \"bookingid\": 416\n    },\n    {\n        \"bookingid\": 383\n    },\n    {\n        \"bookingid\": 705\n    },\n    {\n        \"bookingid\": 187\n    },\n    {\n        \"bookingid\": 351\n    },\n    {\n        \"bookingid\": 647\n    },\n    {\n        \"bookingid\": 489\n    },\n    {\n        \"bookingid\": 798\n    },\n    {\n        \"bookingid\": 195\n    },\n    {\n        \"bookingid\": 564\n    },\n    {\n        \"bookingid\": 32\n    },\n    {\n        \"bookingid\": 25\n    },\n    {\n        \"bookingid\": 299\n    },\n    {\n        \"bookingid\": 223\n    },\n    {\n        \"bookingid\": 320\n    },\n    {\n        \"bookingid\": 332\n    },\n    {\n        \"bookingid\": 211\n    },\n    {\n        \"bookingid\": 676\n    },\n    {\n        \"bookingid\": 751\n    },\n    {\n        \"bookingid\": 136\n    },\n    {\n        \"bookingid\": 117\n    },\n    {\n        \"bookingid\": 769\n    },\n    {\n        \"bookingid\": 581\n    },\n    {\n        \"bookingid\": 275\n    },\n    {\n        \"bookingid\": 394\n    },\n    {\n        \"bookingid\": 173\n    },\n    {\n        \"bookingid\": 486\n    },\n    {\n        \"bookingid\": 636\n    },\n    {\n        \"bookingid\": 178\n    },\n    {\n        \"bookingid\": 604\n    },\n    {\n        \"bookingid\": 79\n    },\n    {\n        \"bookingid\": 822\n    },\n    {\n        \"bookingid\": 242\n    },\n    {\n        \"bookingid\": 501\n    },\n    {\n        \"bookingid\": 952\n    },\n    {\n        \"bookingid\": 655\n    },\n    {\n        \"bookingid\": 755\n    },\n    {\n        \"bookingid\": 660\n    },\n    {\n        \"bookingid\": 287\n    },\n    {\n        \"bookingid\": 321\n    },\n    {\n        \"bookingid\": 879\n    },\n    {\n        \"bookingid\": 554\n    },\n    {\n        \"bookingid\": 785\n    },\n    {\n        \"bookingid\": 412\n    },\n    {\n        \"bookingid\": 4\n    },\n    {\n        \"bookingid\": 404\n    },\n    {\n        \"bookingid\": 2\n    },\n    {\n        \"bookingid\": 743\n    },\n    {\n        \"bookingid\": 100\n    },\n    {\n        \"bookingid\": 739\n    },\n    {\n        \"bookingid\": 83\n    },\n    {\n        \"bookingid\": 393\n    },\n    {\n        \"bookingid\": 585\n    },\n    {\n        \"bookingid\": 30\n    },\n    {\n        \"bookingid\": 760\n    },\n    {\n        \"bookingid\": 722\n    },\n    {\n        \"bookingid\": 532\n    },\n    {\n        \"bookingid\": 863\n    },\n    {\n        \"bookingid\": 468\n    },\n    {\n        \"bookingid\": 208\n    },\n    {\n        \"bookingid\": 484\n    },\n    {\n        \"bookingid\": 568\n    },\n    {\n        \"bookingid\": 382\n    },\n    {\n        \"bookingid\": 154\n    },\n    {\n        \"bookingid\": 576\n    },\n    {\n        \"bookingid\": 709\n    },\n    {\n        \"bookingid\": 438\n    },\n    {\n        \"bookingid\": 796\n    },\n    {\n        \"bookingid\": 172\n    },\n    {\n        \"bookingid\": 595\n    },\n    {\n        \"bookingid\": 175\n    },\n    {\n        \"bookingid\": 721\n    },\n    {\n        \"bookingid\": 453\n    },\n    {\n        \"bookingid\": 85\n    },\n    {\n        \"bookingid\": 513\n    },\n    {\n        \"bookingid\": 260\n    },\n    {\n        \"bookingid\": 461\n    },\n    {\n        \"bookingid\": 907\n    },\n    {\n        \"bookingid\": 667\n    },\n    {\n        \"bookingid\": 181\n    },\n    {\n        \"bookingid\": 99\n    },\n    {\n        \"bookingid\": 444\n    },\n    {\n        \"bookingid\": 27\n    },\n    {\n        \"bookingid\": 360\n    },\n    {\n        \"bookingid\": 926\n    },\n    {\n        \"bookingid\": 353\n    },\n    {\n        \"bookingid\": 322\n    },\n    {\n        \"bookingid\": 439\n    },\n    {\n        \"bookingid\": 815\n    },\n    {\n        \"bookingid\": 375\n    },\n    {\n        \"bookingid\": 703\n    },\n    {\n        \"bookingid\": 46\n    },\n    {\n        \"bookingid\": 685\n    },\n    {\n        \"bookingid\": 381\n    },\n    {\n        \"bookingid\": 635\n    },\n    {\n        \"bookingid\": 573\n    },\n    {\n        \"bookingid\": 714\n    },\n    {\n        \"bookingid\": 759\n    },\n    {\n        \"bookingid\": 701\n    },\n    {\n        \"bookingid\": 630\n    },\n    {\n        \"bookingid\": 8\n    },\n    {\n        \"bookingid\": 417\n    },\n    {\n        \"bookingid\": 559\n    },\n    {\n        \"bookingid\": 526\n    },\n    {\n        \"bookingid\": 904\n    },\n    {\n        \"bookingid\": 850\n    },\n    {\n        \"bookingid\": 582\n    },\n    {\n        \"bookingid\": 885\n    },\n    {\n        \"bookingid\": 483\n    },\n    {\n        \"bookingid\": 925\n    },\n    {\n        \"bookingid\": 574\n    },\n    {\n        \"bookingid\": 396\n    },\n    {\n        \"bookingid\": 123\n    },\n    {\n        \"bookingid\": 859\n    },\n    {\n        \"bookingid\": 43\n    },\n    {\n        \"bookingid\": 236\n    },\n    {\n        \"bookingid\": 209\n    },\n    {\n        \"bookingid\": 749\n    },\n    {\n        \"bookingid\": 448\n    },\n    {\n        \"bookingid\": 598\n    },\n    {\n        \"bookingid\": 182\n    },\n    {\n        \"bookingid\": 840\n    },\n    {\n        \"bookingid\": 947\n    },\n    {\n        \"bookingid\": 509\n    },\n    {\n        \"bookingid\": 951\n    },\n    {\n        \"bookingid\": 533\n    },\n    {\n        \"bookingid\": 842\n    },\n    {\n        \"bookingid\": 188\n    },\n    {\n        \"bookingid\": 398\n    },\n    {\n        \"bookingid\": 580\n    },\n    {\n        \"bookingid\": 845\n    },\n    {\n        \"bookingid\": 5\n    },\n    {\n        \"bookingid\": 618\n    },\n    {\n        \"bookingid\": 937\n    },\n    {\n        \"bookingid\": 617\n    },\n    {\n        \"bookingid\": 699\n    },\n    {\n        \"bookingid\": 826\n    },\n    {\n        \"bookingid\": 65\n    },\n    {\n        \"bookingid\": 162\n    },\n    {\n        \"bookingid\": 135\n    },\n    {\n        \"bookingid\": 129\n    },\n    {\n        \"bookingid\": 900\n    },\n    {\n        \"bookingid\": 587\n    },\n    {\n        \"bookingid\": 257\n    },\n    {\n        \"bookingid\": 39\n    },\n    {\n        \"bookingid\": 356\n    },\n    {\n        \"bookingid\": 775\n    },\n    {\n        \"bookingid\": 23\n    },\n    {\n        \"bookingid\": 836\n    },\n    {\n        \"bookingid\": 285\n    },\n    {\n        \"bookingid\": 732\n    },\n    {\n        \"bookingid\": 872\n    },\n    {\n        \"bookingid\": 695\n    },\n    {\n        \"bookingid\": 479\n    },\n    {\n        \"bookingid\": 641\n    },\n    {\n        \"bookingid\": 155\n    },\n    {\n        \"bookingid\": 76\n    },\n    {\n        \"bookingid\": 841\n    },\n    {\n        \"bookingid\": 270\n    },\n    {\n        \"bookingid\": 640\n    },\n    {\n        \"bookingid\": 214\n    },\n    {\n        \"bookingid\": 111\n    },\n    {\n        \"bookingid\": 89\n    },\n    {\n        \"bookingid\": 230\n    },\n    {\n        \"bookingid\": 627\n    },\n    {\n        \"bookingid\": 149\n    },\n    {\n        \"bookingid\": 767\n    },\n    {\n        \"bookingid\": 689\n    },\n    {\n        \"bookingid\": 838\n    },\n    {\n        \"bookingid\": 126\n    },\n    {\n        \"bookingid\": 614\n    },\n    {\n        \"bookingid\": 294\n    },\n    {\n        \"bookingid\": 408\n    },\n    {\n        \"bookingid\": 232\n    },\n    {\n        \"bookingid\": 523\n    },\n    {\n        \"bookingid\": 53\n    },\n    {\n        \"bookingid\": 913\n    },\n    {\n        \"bookingid\": 893\n    },\n    {\n        \"bookingid\": 430\n    },\n    {\n        \"bookingid\": 892\n    },\n    {\n        \"bookingid\": 772\n    },\n    {\n        \"bookingid\": 549\n    },\n    {\n        \"bookingid\": 609\n    },\n    {\n        \"bookingid\": 654\n    },\n    {\n        \"bookingid\": 147\n    },\n    {\n        \"bookingid\": 112\n    },\n    {\n        \"bookingid\": 921\n    },\n    {\n        \"bookingid\": 207\n    },\n    {\n        \"bookingid\": 78\n    },\n    {\n        \"bookingid\": 392\n    },\n    {\n        \"bookingid\": 490\n    },\n    {\n        \"bookingid\": 683\n    },\n    {\n        \"bookingid\": 90\n    },\n    {\n        \"bookingid\": 565\n    },\n    {\n        \"bookingid\": 192\n    },\n    {\n        \"bookingid\": 894\n    },\n    {\n        \"bookingid\": 519\n    },\n    {\n        \"bookingid\": 263\n    },\n    {\n        \"bookingid\": 201\n    },\n    {\n        \"bookingid\": 941\n    },\n    {\n        \"bookingid\": 518\n    },\n    {\n        \"bookingid\": 95\n    },\n    {\n        \"bookingid\": 328\n    },\n    {\n        \"bookingid\": 558\n    },\n    {\n        \"bookingid\": 405\n    },\n    {\n        \"bookingid\": 827\n    },\n    {\n        \"bookingid\": 626\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Booking - GetBooking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - GetBooking",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/1",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718038646&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2BPTAmzC%2F%2FzZuf9qEJCN3X6mScDbiEo8AIrNUft7%2BVaw%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718038646&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2BPTAmzC%2F%2FzZuf9qEJCN3X6mScDbiEo8AIrNUft7%2BVaw%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a8-srdrY5ol+vvDmqvjUse6siCZSJ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 16:57:26 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstname\": \"Jim\",\n    \"lastname\": \"Jones\",\n    \"totalprice\": 142,\n    \"depositpaid\": true,\n    \"bookingdates\": {\n        \"checkin\": \"2022-08-01\",\n        \"checkout\": \"2023-11-22\"\n    },\n    \"additionalneeds\": \"Breakfast\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Booking - CreateBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"Jim\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - GetBooking Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\" : \"Jim\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718039821&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XdYkhaC0BZs2XS%2Fb2p49P87CmSp31rj%2FxAT0iZKzNms%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718039821&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XdYkhaC0BZs2XS%2Fb2p49P87CmSp31rj%2FxAT0iZKzNms%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"c5-1yu/otkmkI67eWuGgW6DEPu3ZRM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 17:17:01 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"bookingid\": 2826,\n    \"booking\": {\n        \"firstname\": \"Jim\",\n        \"lastname\": \"Brown\",\n        \"totalprice\": 111,\n        \"depositpaid\": true,\n        \"bookingdates\": {\n            \"checkin\": \"2018-01-01\",\n            \"checkout\": \"2019-01-01\"\n        },\n        \"additionalneeds\": \"Breakfast\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Booking - CreateBooking Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/3082",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"3082"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - GetBooking",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/1",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718038646&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2BPTAmzC%2F%2FzZuf9qEJCN3X6mScDbiEo8AIrNUft7%2BVaw%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718038646&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2BPTAmzC%2F%2FzZuf9qEJCN3X6mScDbiEo8AIrNUft7%2BVaw%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"a8-srdrY5ol+vvDmqvjUse6siCZSJ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 16:57:26 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstname\": \"Jim\",\n    \"lastname\": \"Jones\",\n    \"totalprice\": 142,\n    \"depositpaid\": true,\n    \"bookingdates\": {\n        \"checkin\": \"2022-08-01\",\n        \"checkout\": \"2023-11-22\"\n    },\n    \"additionalneeds\": \"Breakfast\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Booking - PartialUpdateBooking",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/3082",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"3082"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - CreateBooking Copy 2",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/3082",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"3082"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718039970&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=6zlI%2FWXhVn3vzXqH0d5jr5uPv8RIZ7SbY8E4EWiM3No%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718039970&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=6zlI%2FWXhVn3vzXqH0d5jr5uPv8RIZ7SbY8E4EWiM3No%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"aa-waBDObUc25azXZ1Gkrz0LIEDGrg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 17:19:30 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"firstname\": \"James\",\n    \"lastname\": \"Brown\",\n    \"totalprice\": 111,\n    \"depositpaid\": true,\n    \"bookingdates\": {\n        \"checkin\": \"2018-01-01\",\n        \"checkout\": \"2019-01-01\"\n    },\n    \"additionalneeds\": \"Breakfast\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Booking - PartialUpdateBooking Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Booking - PartialUpdateBooking Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/booking/1",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"booking",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1718040023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=SdHu6aFi4sFTLHiXYV1cIE9s6ncd2%2BvVqyaFK%2BBUurw%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1718040023&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=SdHu6aFi4sFTLHiXYV1cIE9s6ncd2%2BvVqyaFK%2BBUurw%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 10 Jun 2024 17:20:23 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "Created"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
